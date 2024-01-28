@@ -1,0 +1,231 @@
+#header{
+    z-index: 1 !important;
+}
+
+.kbzipcodepopup_container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: auto;
+}
+.kbzipcodepopup_modal {
+    width: 450px;
+    margin: 6% auto 0;
+    position: relative;
+    background: White;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 0 1px #383636;
+    transition: 0.75s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 12px 2px #272727;
+    background-position: top 34% center;
+}
+
+.kbzipcodepopup_modal .dropdownBox {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+}
+
+#zipcodepopupForm .kb-form-field-block {
+    position: relative;
+}
+
+.kbzipcodepopup_modal:before {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+}
+.error_message {
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.velo-search-button.velo-field-inline {
+    width: 100%;
+}
+
+.kbzipcodepopup_modal_content_section {    
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative
+}
+
+.kbbtn-success {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 7px 35px;
+}
+
+.kbzipcodepopup_modal_body h1 {
+    text-align: Left;
+    font-size: 15px;
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+.close_zipcodepopup_modal {
+    position: absolute;
+    cursor: pointer;
+    right: -7px;
+    top: -20px;
+    cursor: pointer;
+}
+
+#kbzipcodepopup-modal-backdropDiv {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+@-webkit-keyframes zoomInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes zoomInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+.zoomInUp {
+    -webkit-animation-name: zoomInUp;
+    animation-name: zoomInUp;
+}
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@media (prefers-reduced-motion) {
+    .animated {
+        -webkit-animation: unset !important;
+        animation: unset !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+}
+@media(max-width:767px)
+{
+    .kbzipcodepopup_modal {
+        width: 90%;
+    }
+    
+    .kbzipcodepopup_modal{
+        padding:10px;
+    }
+    .kbzipcodepopup_modal_content_section {
+        padding:0 5px;
+    }
+}
+
+a.action.primary {
+    display: inline-block;
+    text-decoration: none;
+}
+a.action.primary:hover,
+a.action.primary:active,
+a.action.primary:focus {
+    text-decoration: none;
+}
+.action.primary {
+    background-image: none;
+    background: #1979c3;
+    border: 1px solid #1979c3;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    padding: 7px 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.action.primary:focus,
+.action.primary:active {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #ffffff;
+}
+
+.action.primary:hover {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #ffffff;
+}
+
+.action.primary.disabled,
+.action.primary[disabled],
+fieldset[disabled] .action.primary {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+#zipcodepopupForm .error_message {
+    color: #ffabab !important;
+}
+
+@media(max-width:992px){
+    .close_zipcodepopup_modal {
+        right: -7px;
+        top: -20px;
+        color: #000;
+    }
+}
+@media(max-width:767px) {
+
+    .close_zipcodepopup_modal img {
+        max-width: 30px;
+    }
+    
+    .close_zipcodepopup_modal {
+        right: -7px;
+        top: -20px;
+    }
+}

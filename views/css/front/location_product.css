@@ -1,0 +1,52 @@
+.location_text {
+    word-wrap: break-word;
+    font-weight: 700;
+    font-size : 145%;
+    display:inline-block;
+}
+
+#location_path {
+    text-align : center;
+}
+
+#zipcode_check_click{
+    cursor: pointer;
+}
+.kpz_block{
+        float: left;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+}
+.location_block {
+    font-size:12px;
+    font-family: sans-serif;
+    padding: 8px 5px 8px 5px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.location_input_field {
+    margin-top: 5%;
+}
+
+.pacbz_div {
+    margin-top: 2rem;
+}
+
+#type_zipcode{
+    background:white;
+    
+}
+
+.pacbz_btn{
+    background:black;
+}
+
+@media (min-width: 768px) and  (max-width:1024px) {
+    .location_block {
+        font-size:11px;
+    }
+    .location_text {
+        font-size : 140%;
+    }
+}

@@ -1,0 +1,116 @@
+/**
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ * We offer the best and most useful modules PrestaShop and modifications for your online store. 
+ *
+ * @category  PrestaShop Module
+ * @author    knowband.com <support@knowband.com>
+ * @copyright 2015 knowband
+ * @license   see file: LICENSE.txt
+ */
+em {
+    color: #ff0000;
+}
+@font-face {
+  font-family: 'Marketplace Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/e79bfd88537def476913f3ed52f4f4b3.eot);
+  /* For IE6-8 */
+  src: local("Marketplace Material Icons"), local("MaterialIcons-Regular"), url(../../fonts/570eb83859dc23dd0eec423a49e147fe.woff2) format("woff2"), url(../../fonts/012cf6a10129e2275d79d6adac7f3b02.woff) format("woff"), url(../../fonts/a37b0c01c0baf1888ca812cc0508f6e2.ttf) format("truetype"); }
+
+.kb-block{
+    display:block;
+}
+
+form{
+    margin:0;
+    padding:0;
+}
+
+.kb-inpfield, .kb-inptexarea, .kb-inpselect{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #428BCA;
+    background-color:#fff;
+    padding:5px;
+}
+
+.kb-inpfield:focus, .kb-inptexarea:focus{
+    border: 1px solid #FD6F10;
+    background-color: #FFF6D0;
+}
+
+.kb-form em{
+    color:#ff0000;
+}
+
+.kbbtn-big{
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 3px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+}
+
+.kbbtn-success{
+    background-color: #79BD3C;
+    border-color: #6CAA36;
+    color: #FFFFFF;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5192f3;
+    border-color: #3983f1;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+    color: #fff;
+    background-color: #2b7af0;
+    border-color: #0f62de; 
+}
+
+.open .btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #2b7af0;
+    border-color: #0f62de;
+}
+
+.btn-info:active, .btn-info.active {
+    background-image: none;
+}
+
+.open .btn-info.dropdown-toggle {
+    background-image: none; 
+}
+
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+    background-color: #5192f3;
+    border-color: #3983f1;
+}
+@media (max-width: 579px){
+    
+    .kb-inpfield, .kb-inpselect {height: 30px;}        
+}
+
+.error_field {
+    border:1px solid #ff0000 !important;
+}
+
+.error_message {
+    color: #ff0000 !important;
+}

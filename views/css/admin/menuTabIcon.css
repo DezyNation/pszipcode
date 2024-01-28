@@ -1,0 +1,12 @@
+.icon-AdminZipcodeAvailabilityCheck:before{
+    content: "\f021";
+}
+.error_field {
+    border: 1px solid red !important;
+}
+
+.error_message {
+    font-family: Arial;
+    font-size: 12px;
+    color: red;
+}
